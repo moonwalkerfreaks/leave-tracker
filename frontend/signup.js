@@ -5,7 +5,7 @@ document.getElementById('signup-form').addEventListener('submit', async (e) => {
   const password = document.getElementById('password').value;
   const role = document.getElementById('role').value;
 
-  const res = await fetch('http://localhost:3000/api/signup', {
+  const res = await fetch('http://3.110.132.46:3000/api/signup', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ username, password, role })
