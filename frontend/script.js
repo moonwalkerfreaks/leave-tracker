@@ -14,9 +14,23 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
 
   if (res.ok) {
     alert('Login successful!');
-    // Store token or redirect to dashboard
-    window.location.href = 'dashboard.html';
+
+    // ✅ Role-based redirection
+    switch (data.user.role) {
+      case 'admin':
+        window.location.href = 'admin-dashboard.html';
+        break;
+      case 'manager':
+        window.location.href = 'manager-dashboard.html';
+        break;
+      case 'employee':
+        window.location.href = 'employee-dashboard.html';
+        break;
+      default:
+        alert('Unknown role');
+    }
   } else {
     alert(data.message || 'Login failed');
   }
 });
+
