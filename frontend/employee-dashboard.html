@@ -1,2 +1,12 @@
 <h2>Welcome, Employee</h2>
-<p>Here you can apply for leave.</p>
+<p>Apply for Leave:</p>
+<form id="leave-form">
+  <label>From: <input type="date" id="from_date" required></label><br>
+  <label>To: <input type="date" id="to_date" required></label><br>
+  <label>Reason: <textarea id="reason" required></textarea></label><br>
+  <button type="submit">Apply</button>
+</form>
+
+<div id="status-message"></div>
+<script src="employee.js"></script>
+
