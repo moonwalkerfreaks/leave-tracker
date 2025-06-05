@@ -6,7 +6,7 @@ document.getElementById('leave-form').addEventListener('submit', async (e) => {
   const reason = document.getElementById('reason').value;
   const employee = localStorage.getItem('username');
 
-  const res = await fetch('http://localhost:3000/api/leaves', {
+  const res = await fetch('http://3.110.132.46:3000/api/leaves', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ employee, from_date, to_date, reason })
