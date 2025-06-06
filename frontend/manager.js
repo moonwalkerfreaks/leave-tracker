@@ -26,7 +26,7 @@ async function fetchLeaveRequests() {
 }
 
 async function updateLeaveStatus(id, status) {
-  const res = await fetch(`http://localhost:3000/api/leaves/${id}`, {
+  const res = await fetch(`http://http://3.110.132.46:3000/api/leaves/${id}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ status })
