@@ -1,5 +1,5 @@
 // Save default username to localStorage for testing
-localStorage.setItem('username', 'mbhori'); // You can change this as needed
+//localStorage.setItem('username', 'mbhori'); // You can change this as needed
 
 // Handle leave request form submission
 document.getElementById('leave-form').addEventListener('submit', async (e) => {
