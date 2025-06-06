@@ -12,6 +12,7 @@ const applyLeave = async (req, res) => {
   }]);
 
   if (error) {
+    console.error('Supabase Insert Error:', error);
     return res.status(500).json({ message: 'Error submitting leave request', error });
   }
 
