@@ -1,4 +1,4 @@
-const supabase = require('../supabaseClient');
+const supabase = require('../supabaseClient.js');
 
 const applyLeave = async (req, res) => {
   const { employee, from_date, to_date, reason } = req.body;
