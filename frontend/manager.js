@@ -1,5 +1,5 @@
 async function fetchLeaveRequests() {
-  const res = await fetch('http://3.110.132.46/:3000/api/leaves/pending');
+  const res = await fetch('http://3.110.132.46:3000/api/leaves/pending');
   const data = await res.json();
 
   const container = document.getElementById('leave-requests');
